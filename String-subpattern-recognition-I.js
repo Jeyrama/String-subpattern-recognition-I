@@ -13,3 +13,6 @@ Strings will never be empty and can be composed of any character
 (just consider upper- and lowercase letters as different entities) 
 and can be pretty long.
 */
+
+
+// Solution
