@@ -16,3 +16,7 @@ and can be pretty long.
 
 
 // Solution
+
+function hasSubpattern(string) {
+  return (string + string).indexOf(string, 1) != string.length;
+}
