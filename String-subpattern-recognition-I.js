@@ -22,3 +22,17 @@ function hasSubpattern(string) {
 }
 
 // or
+
+function hasSubpattern(str){
+  if(str.length < 2) return false 
+  let pattern = str[0]
+  
+  for(let i = 1; i < str.length/2; i++) {
+   pattern+=str[i]
+
+    if (pattern === str.slice(i+ 1, i+pattern.length + 1) && str.length % pattern.length === 0) {
+      return true
+    }
+  }
+  return false
+}
